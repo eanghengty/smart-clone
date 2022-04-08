@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/smartbackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/topbar"
+        >
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="40dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/profile"></ImageView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/profile"
+            android:layout_marginStart="10dp"
+            android:id="@+id/relative1"
+            >
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello,"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/white">
+
+            </TextView>
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1"
+                android:text="Hengty"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:textColor="@color/white">
+
+            </TextView>
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_toEndOf="@+id/text2"
+                android:layout_centerVertical="true"
+                android:src="@drawable/check"
+                android:layout_margin="3dp"
+                ></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="012 345 678"
+                android:layout_below="@+id/text2"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"></TextView>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/bell"></ImageView>
+
+    </RelativeLayout>
+<!--    balance bar-->
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/topbar"
+        android:layout_centerHorizontal="true"
+
+        android:background="@drawable/whiteroundbackground"
+        android:elevation="5dp">
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/text4"
+            android:layout_centerHorizontal="true"
+            android:text="Main Balance"
+            android:textSize="10dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="0.25 USD"
+            android:textColor="@color/green"
+            android:textSize="16dp"
+            android:textStyle="bold"></TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text4"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text4"
+                android:text="Expires in "
+                android:textSize="10dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6 days"
+                android:textColor="@color/green"
+                android:textSize="10dp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+
+            android:layout_above="@+id/text4"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+
+            android:src="@drawable/information"
+
+            >
+
+        </ImageView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative3"
+        android:layout_below="@+id/relative2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="175dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/greenroundbackground"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/loan"></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="SmartLoan"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                ></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="175dp"
+            android:layout_height="40dp"
+            android:background="@drawable/greenroundbackground"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"></ImageView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
